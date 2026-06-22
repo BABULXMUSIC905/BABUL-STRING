@@ -93,7 +93,7 @@ async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: 
     if not is_bot:
         t = "☞︎︎︎ » ᴘʟᴇᴀsᴇ ᴇɴᴛᴇʀ ʏᴏᴜʀ ᴘʜᴏɴᴇ ɴᴜᴍʙᴇʀ ᴛᴏ ᴘʀᴏᴄᴇᴇᴅ : \nᴇxᴀᴍᴘʟᴇ : `+91 95xxxxxxXX`'"
     else:
-        t = "ᴩʟᴇᴀsᴇ sᴇɴᴅ ʏᴏᴜʀ **ʙᴏᴛ_ᴛᴏᴋᴇɴ** ᴛᴏ ᴄᴏɴᴛɪɴᴜᴇ.\nᴇxᴀᴍᴩʟᴇ : `6810174902:AAGQVElsBPTNe6Rj16miPbCrDGikscfarYY`'"
+        t = "ᴩʟᴇᴀsᴇ sᴇɴᴅ ʏᴏᴜʀ **ʙᴏᴛ_ᴛᴏᴋᴇɴ** ᴛᴏ ᴄᴏɴᴛɪɴᴜᴇ.\nᴇxᴀᴍᴩʟᴇ : `8669392291:AAGJWE2DSPNJqd40XdkBiogcjDIhq6hu9kA`'"
     phone_number_msg = await bot.ask(user_id, t, filters=filters.text)
     if await cancelled(phone_number_msg):
         return
@@ -174,7 +174,7 @@ async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: 
         string_session = client.session.save()
     else:
         string_session = await client.export_session_string()
-    text = f"**ᴛʜɪs ɪs ʏᴏᴜʀ {ty} sᴛʀɪɴɢ sᴇssɪᴏɴ** \n\n`{string_session}` \n\n**ɢᴇɴʀᴀᴛᴇᴅ ʙʏ :[𝐍 𝐎 𝐁 𝐈 𝐓 𝐀](https://t.me/BOT_HEART) ᴡᴀʀɴɪɴɢ :** ᴅᴏɴᴛ sʜᴀʀᴇ ᴡɪᴛʜ ᴀɴʏᴏɴᴇ ᴇᴠᴇɴ ɪғ ᴡɪᴛʜ ʏᴏᴜʀ ɢғ 🏴‍☠️"
+    text = f"**ᴛʜɪs ɪs ʏᴏᴜʀ {ty} sᴛʀɪɴɢ sᴇssɪᴏɴ** \n\n`{string_session}` \n\n**ɢᴇɴʀᴀᴛᴇᴅ ʙʏ :[𝐁 𝐀 𝐁 𝐔 𝐋](https://t.me/QueenSupportChatBot) ᴡᴀʀɴɪɴɢ :** ᴅᴏɴᴛ sʜᴀʀᴇ ᴡɪᴛʜ ᴀɴʏᴏɴᴇ ᴇᴠᴇɴ ɪғ ᴡɪᴛʜ ʏᴏᴜʀ ɢғ 🏴‍☠️"
     try:
         if not is_bot:
             await client.send_message("me", text)
@@ -183,7 +183,7 @@ async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: 
     except KeyError:
         pass
     await client.disconnect()
-    await bot.send_message(msg.chat.id, "sᴜᴄᴄᴇssғᴜʟʟʏ ɢᴇɴᴇʀᴀᴛᴇᴅ ʏᴏᴜʀ {} sᴛʀɪɴɢ sᴇssɪᴏɴ.\n\nᴘʟᴇᴀsᴇ ᴄʜᴇᴄᴋ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs ғᴏʀ ɢᴇᴛᴛɪɴɢ ɪᴛ.\n\nᴀ sᴛʀɪɴɢ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴛ ʙʏ [𝐍 𝐎 𝐁 𝐈 𝐓 𝐀](https://t.me/ARAME9)".format("ᴛᴇʟᴇᴛʜᴏɴ" if telethon else "ᴩʏʀᴏɢʀᴀᴍ"))
+    await bot.send_message(msg.chat.id, "sᴜᴄᴄᴇssғᴜʟʟʏ ɢᴇɴᴇʀᴀᴛᴇᴅ ʏᴏᴜʀ {} sᴛʀɪɴɢ sᴇssɪᴏɴ.\n\nᴘʟᴇᴀsᴇ ᴄʜᴇᴄᴋ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs ғᴏʀ ɢᴇᴛᴛɪɴɢ ɪᴛ.\n\nᴀ sᴛʀɪɴɢ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴛ ʙʏ [𝐁 𝐀 𝐁 𝐔 𝐋](https://t.me/BOSS_OF_BABUL_OH)".format("ᴛᴇʟᴇᴛʜᴏɴ" if telethon else "ᴩʏʀᴏɢʀᴀᴍ"))
 
 
 async def cancelled(msg):
